@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color: #FAFAFA;
+    --primary-color-hover: #686767;
+    --title-color: #000000;
+    --placeholder-color: #5B5656;
+    --backgroud-color: #FAFAFA;
+    --despesa-color: #FF4726;
+    --receita-color: #58CA5E;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-color: var(--backgroud-color);
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 5.563rem;
+    width: 100%;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+#logo-nav{
+    grid-column: 1 / 1;
+    margin-left: 2.202rem ;
+    margin-top: 0.528rem;
+}
+
+#logo-nav img{
+    width: 5rem;
+    height: 5rem;
+}
+
+#pages{
+    grid-column: 6 / 8;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pages-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-nav{
+    margin-top: 2rem;
+    padding-bottom: 1.006rem;
+    border-bottom: var(--primary-color);
+    border-style: solid;
+    text-decoration: none;
+    color: var(--title-color)
+
+}
+
+#despesa-text{
+    color: var(--despesa-color);
+    border-bottom: transparent;
+    border-style: solid;
+}
+
+#receita-text{
+    color: var(--receita-color);
+    border-bottom: transparent;
+    border-style: solid;
+}
+
+#report-nav{
+    grid-column: 12/ 13;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#report-logo svg{
+    fill: #E4BF28;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#title-report{
+    grid-column: 6 / 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.375rem;
+}
+
+#title-report p{
+    color: var(--primary-color-hover);
+    font-size: 3rem;
+}
+
+#graph-background{
+    grid-column: 1 / -1;
+    margin-top: 5.313rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    height: 27.688rem;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.graph-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20.938rem;
+}
+
+#graph-despesa{
+    grid-column: 2 / 5;
+}
+
+#graph-receita{
+    grid-column: 9 / 12;
+}
+
+#button-div{
+    grid-column: 6 / 8;
+    width: 100%;
+    margin-top: 5.313rem;
+}
+
+#button-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+    width: 100%;
+    background-color: var(--primary-color-hover);
+    color: var(--backgroud-color);
+    border-radius: 3.125rem;
+
+}

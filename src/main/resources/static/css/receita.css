@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color: #58CA5E;
+    --primary-color-hover: #32b439;
+    --title-color: #000000;
+    --placeholder-color: #5B5656;
+    --backgroud-color: #FAFAFA;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-color: var(--backgroud-color);
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 5.563rem;
+    width: 100%;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+#logo-nav{
+    grid-column: 1 / 1;
+    margin-left: 2.202rem ;
+    margin-top: 0.528rem;
+}
+
+#logo-nav img{
+    width: 5rem;
+    height: 5rem;
+}
+
+#pages{
+    grid-column: 6 / 8;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pages-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-nav{
+    margin-top: 2rem;
+    padding-bottom: 1.006rem;
+    border-bottom: var(--primary-color);
+    border-style: solid;
+    text-decoration: none;
+    color: var(--title-color)
+
+}
+
+#despesa-text{
+    border-bottom: transparent;
+    border-style: solid;
+    color: #FF4726FF;
+}
+
+#report-nav{
+    grid-column: 12/ 13;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#report-logo svg{
+    fill: #E4BF28;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#forms-center{
+    grid-column: 5 / 9  ;
+    margin-top: 16.875rem;
+}
+
+form{
+    width: 100%;
+}
+
+.input-information{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: var(--primary-color) solid 2px;
+    height: 3.813rem;
+    margin-bottom: 2.688rem;
+}
+
+.img-input{
+    margin-left: 1.438rem;
+}
+
+.img-input svg{
+    fill: var(--primary-color);
+}
+
+.input-writer{
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.input-writer input{
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.input-writer input::placeholder{
+    color: var(--placeholder-color);
+}
+
+.input-writer input:focus {
+    outline: none;
+    border: none;
+}
+
+#button-sub{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3.813rem;
+    width: 100%;
+}
+
+#button-sub button{
+    height: 100%;
+    width: 12.5rem;
+    border-radius: 3.125rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--backgroud-color);
+}
+
+#button-sub button:hover{
+    background-color: var(--primary-color-hover);
+    cursor: pointer;
+}

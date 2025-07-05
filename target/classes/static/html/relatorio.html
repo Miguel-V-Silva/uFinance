@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="/css/relatorio.css">
+</head>
+<body>
+<nav>
+    <div id="logo-nav">
+        <div id="logo">
+            <a href="">
+                <img src="/img/Copilot_20250629_141117.png" alt="Logo">
+            </a>
+        </div>
+    </div>
+    <div id="pages">
+        <div id="receita-title" class="pages-title">
+            <a href="/receita" id="receita-text" class="text-nav">Receita</a>
+        </div>
+        <div id="despesa-title" class="pages-title">
+            <a href="/despesa" id="despesa-text" class="text-nav">Despesa</a>
+        </div>
+    </div>
+    <div id="report-nav">
+        <div id="report-logo">
+            <a href="/relatorio">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.833rem" viewBox="0 -960 960 960" width="2.578rem" fill="#e3e3e3">
+                    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</nav>
+<main>
+    <div id="title-report">
+        <p>
+            Relatório
+        </p>
+    </div>
+    <div id="graph-background">
+        <div id="graph-despesa" class="graph-board">
+            <canvas id="graph-despesa-total"></canvas>
+        </div>
+        <div id="graph-receita" class="graph-board">
+            <canvas id="graph-receita-total"></canvas>
+        </div>
+    </div>
+    <div id="button-div">
+        <a href="" id="button-list">
+            <p>
+                Ver Lista
+            </p>
+        </a>
+    </div>
+</main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/relatorio.js"></script>
+</html>

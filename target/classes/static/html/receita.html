@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita</title>
+    <link rel="stylesheet" href="/css/receita.css">
+</head>
+<body>
+<nav>
+    <div id="logo-nav">
+        <div id="logo">
+            <a href="">
+                <img src="/img/Copilot_20250629_141117.png" alt="Logo">
+            </a>
+        </div>
+    </div>
+    <div id="pages">
+        <div id="receita-title" class="pages-title">
+            <a href="/receita" id="receita-text" class="text-nav">Receita</a>
+        </div>
+        <div id="despesa-title" class="pages-title">
+            <a href="/despesa" id="despesa-text" class="text-nav">Despesa</a>
+        </div>
+    </div>
+    <div id="report-nav">
+        <div id="report-logo">
+            <a href="/relatorio">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.833rem" viewBox="0 -960 960 960" width="2.578rem" fill="#e3e3e3">
+                    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</nav>
+<main>
+    <div id="forms-center">
+        <form action="/receita-cadastrar" method="post" onsubmit="return submitForm()">
+            <div class="input-information">
+                <div class="img-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.188rem" viewBox="0 -960 960 960" width="2.188rem" fill="#58CA5E">
+                        <path d="M440-600v-120H320v-80h120v-120h80v120h120v80H520v120h-80ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z"/>
+                    </svg>
+                </div>
+                <div class="input-writer">
+                    <input type="text" name="name" id="name" placeholder="Nome:" required>
+                </div>
+            </div>
+            <div class="input-information">
+                <div class="img-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.188rem" viewBox="0 -960 960 960" width="2.188rem" fill="#58CA5E">
+                        <path d="M441-120v-86q-53-12-91.5-46T293-348l74-30q15 48 44.5 73t77.5 25q41 0 69.5-18.5T587-356q0-35-22-55.5T463-458q-86-27-118-64.5T313-614q0-65 42-101t86-41v-84h80v84q50 8 82.5 36.5T651-650l-74 32q-12-32-34-48t-60-16q-44 0-67 19.5T393-614q0 33 30 52t104 40q69 20 104.5 63.5T667-358q0 71-42 108t-104 46v84h-80Z"/>
+                    </svg>
+                </div>
+                <div class="input-writer">
+                    <input type="text" name="price" id="price" placeholder="Valor:" required>
+                </div>
+            </div>
+            <div class="input-information">
+                <div class="img-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2.188rem" viewBox="0 -960 960 960" width="2.188rem" fill="#58CA5E">
+                        <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                    </svg>
+                </div>
+                <div class="input-writer">
+                    <input type="number" name="day" id="day" placeholder="Dia:" required>
+                </div>
+            </div>
+            <div id="button-sub" class="input-information">
+                <button type="submit">
+                    <div class="button-form">
+                        <p>Salvar</p>
+                    </div>
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+<script src="/js/ufinance.js"></script>
+</html>
