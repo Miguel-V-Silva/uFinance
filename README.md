@@ -32,9 +32,9 @@ Permite o registro, consulta e gerenciamento de despesas e receitas de forma sim
 
 ---
 
-## 📷 Prints
+## 📷 Observações
 
-> ⚠️ Adicione prints das telas e páginas do sistema aqui.
+> ⚠️ Projeto em Andamento
 
 ---
 
